@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Slclasse</title>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        background-color: rgb(176, 108, 160);
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        
+    }
+    .content{
+        width: 70%;
+        height: 90vh;
+        background-color: rgb(73, 8, 69);
+        display: none;
+    }
+    button{
+        width: 10%;
+        height: 10vh;
+    }
+    
+</style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <h3 class="element">Home</h3>
+            <h3 class="element">About</h3>
+            <h3 class="element">Menu</h3>
+            <h3 class="element">contact</h3>
+
+        </div>
+     
+        <p>Lorem ipsum, dolor sit
+             amet consectetur adipisicing e
+             lit. Velit minima vero omnis dele
+             ctus sint fuga ab natus voluptates
+              necessitatibus. Deleniti dicta q
+              uos veniam minima. Alias at simi
+              lique sit quas eum ut provclassent od
+              io, numquam veniam quaerat natus q
+              uam inventore culpa quos. Provclassen
+              t tempore iste odio
+               at culpa accusanti
+            um suscipit alias?Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere provclassent consequatur a autem reprehenderit, animi laudantium dolores aliquclass iure sint distinctio amet velit, deleniti ipsa esse nobis quia tenetur. Praesentium doloribus et autem maiores assumenda esse natus voluptas suscipit libero dignissimos. Libero, autem esse. Illo recusandae, quisquam iste, tempore architecto sunt asperiores consequuntur vel alias 
+            in quas similique odio eius.</p>
+            <button ondblclick="afficher()" onclick="su()">click</button>
+
+    </div>
+    <script>
+let but=document.getElementsByTagName('button')[0]
+let con=document.getElementsByClassName('content')[0]
+let element=document.querySelectorAll('.element');
+let para=document.getElementsByTagName('p')[0];
+function afficher(){
+    if(con.style.display="none")  {
+        con.style.display='block'
+       
+        
+    }
+   
+}
+function su(){
+    
+        con.style.display='none'
+    
+}
+element.forEach(el => {
+    el.style.color = 'white';
+    el.style.padding='10px'
+});
+but.style.color='white',
+but.style.background='pink'
+but.style.border='none'
+but.style.borderRadius='5px'
+para.style.textAlign='center'
+
+    </script>
+</body>
+</html>
